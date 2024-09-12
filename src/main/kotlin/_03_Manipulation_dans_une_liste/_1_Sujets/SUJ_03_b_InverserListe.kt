@@ -16,8 +16,16 @@ import _10_Demos_et_tests.testerEnLot
  */
 fun inverserListe(liste: List<Int>): MutableList<Int> {
     val copieListe = liste.toMutableList()
+    var a = 0
+    var b = copieListe.size - 1
 
-    // A COMPLETER ICI
+    while (a < b){
+        val temp = copieListe[a]
+        copieListe[a] = copieListe[b]
+        copieListe[b] = temp
+        a++
+        b--
+    }
 
     return copieListe
 }

@@ -30,7 +30,7 @@ fun triParSelection(liste: List<Int>): MutableList<Int> {
             if (listeCopie[j]<listeCopie[i]){
                 changement = listeCopie[i]
                 listeCopie[i] = listeCopie[j]
-                listeCopie[j] = changement 
+                listeCopie[j] = changement
             }
         }
     }
